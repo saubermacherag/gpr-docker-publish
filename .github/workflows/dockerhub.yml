@@ -16,7 +16,7 @@ jobs:
           TAG: 'my-optional-tag-name'
           DOCKERFILE_PATH: '.github/docker/Dockerfile'
           BUILD_CONTEXT: '.'
-          DOCKERHUB_REPOSITORY: 'pinkrobin/gpr-docker-publish-example'
-          DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+          DOCKERHUB_REPOSITORY: 'eyal0/gpr-docker-publish-example'
+          DOCKERHUB_USERNAME: eyal0
         env:
           REGISTRY_TOKEN: ${{ secrets.DOCKERHUB_PAT }}
