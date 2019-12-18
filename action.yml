@@ -36,4 +36,4 @@ branding:
   icon: 'layers'
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://eyal0/gpr-easycov-coverage'

@@ -19,3 +19,13 @@ jobs:
         BUILD_CONTEXT: '.'
       env:
         REGISTRY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Publish Docker Image to GPR
+      uses: ./
+      with:
+        DOCKERFILE_PATH: 'Dockerfile'
+        BUILD_CONTEXT: '.'
+        DOCKERHUB_REPOSITORY: 'eyal0/gpr-easycov-coverage'
+        DOCKERHUB_USERNAME: 'eyal0'
+        cache: true
+      env:
+        REGISTRY_TOKEN: ${{ secrets.DOCKERHUB_PAT }}
